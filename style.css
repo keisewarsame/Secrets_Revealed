@@ -1,0 +1,127 @@
+html {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: rgba(0,0,0,0.1); */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: 'DA TJP NZZ OCDN TZGG "WDIBJ" OJ RDI!';
+    color: white;
+}
+
+#heading::before {
+    content: 'Secret #: 99';
+    color: white;
+}
+
+#heading {
+    width: 272px;
+    height: 92px;
+    /* background-image: url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#search-container {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#search-box-text {
+width: 90%;
+height: 40px;
+padding: 10px;
+border: 1px solid #dfe1e5;
+border-radius: 25px;
+box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+font-size: 16px;
+outline: none;
+margin-top: 20px;
+flex: 4;
+}
+
+#search-box-text::placeholder {
+    opacity: 0.5;
+}
+
+#search-box-number {
+width: 14%;
+height: 40px;
+padding: 10px;
+border: 1px solid #dfe1e5;
+border-radius: 25px;
+box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+font-size: 16px;
+outline: none;
+margin-top: 20px;
+text-align: center;
+flex: 1;
+}
+
+#search-box-number::placeholder {
+    opacity: 0.5;
+    text-align: center;
+    content: 'HELLOOOOOOO';
+}
+
+#search-btn {
+width: 15%;
+height: 40px;
+background-color: #71819c;
+color: #fff;
+border: none;
+border-radius: 25px;
+box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+font-size: 16px;
+outline: none;
+/* margin-left: -5px; */
+margin-top: 20px;
+cursor: pointer;
+margin-bottom: 50px;
+}
+
+#search-btn:hover {
+background-color: #1d365e;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+#output_box {
+    border-radius: 10px;
+    width: 50%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75);
+}
+
+img {
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+}
+
+p {
+    color: rgb(133, 46, 46);
+}

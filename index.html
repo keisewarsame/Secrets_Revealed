@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+    <title>Document</title>
+
+</head>
+<body>
+    <!-- <p style="color: white;">hint</p> -->
+    <div id="heading">
+        <h1>Caesar Cypher</h1>
+        <img class="hidden" id="reload_img" src="/Images/recurring-appointment.png" alt="reload" onclick="location.reload()">
+    </div>
+
+    <div id="search-container">
+        <div class="text-boxes">
+            <input type="text" name="text" id="search-box-text" placeholder="Type 'encode' to encrypt, type 'decode' to decrypt" style="text-align: center;">
+            <input type="number" class="hidden" name="number" id="search-box-number" placeholder="Secret #">
+        </div>
+        <button onclick="onButtonClick()" type="submit" id="search-btn">Continue</button>
+        <div id="output_box_container" class="output_box_container hidden">
+            <div id="output_box">
+                  <p id="final_text"></p>
+            </div>
+        </div>
+    
+  </div>
+</body>
+</html>
