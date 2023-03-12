@@ -44,35 +44,44 @@ function onButtonClick() {
     const button_value = document.getElementById('search-btn');
     const new_text_container = document.getElementById('output_box_container');
     const img = document.getElementById('reload_img');
+    const hint = document.getElementById('hint');
     const final = document.getElementById('final_text');
     
     if (input_text.value == 'decode') {
-        decode = true;
+      decode = true;
     };
     
     
     if (input_number.classList.contains("hidden")) {
-        if (input_text.value != 'encode' && input_text.value != 'decode') {
-            alert('CHOOSE ENCODE OR DECODE!!!');
-            location.reload();
-        }
-        else {
-            input_number.classList.remove('hidden');
-            img.classList.remove('hidden');
-            button_value.innerHTML = 'Submit';
-            input_text.value = '';
-            input_text.placeholder = "What is your message?";
-            // button_value.classList.
-        };
+      if (input_text.value != 'encode' && input_text.value != 'decode') {
+        alert('CHOOSE ENCODE OR DECODE!!!');
+        location.reload();
+      }
+      else {
+        input_number.classList.remove('hidden');
+        img.classList.remove('hidden');
+        hint.classList.remove('hidden');
+        button_value.innerHTML = 'Submit';
+        input_text.value = '';
+        input_text.placeholder = "What is your message?";
+        // button_value.classList.
+      };
     }
     else {
-        new_text_container.classList.remove('hidden');
-        console.log(input_number.value);
-        console.log(input_text.value);
-        if (decode) {
-            input_number.value = input_number.value * -1;
-        };
-        final.innerHTML = caesarCipher(input_text.value, input_number.value);
-        console.log(caesarCipher(input_text.value, input_number.value))
+      new_text_container.classList.remove('hidden');
+      console.log(input_number.value);
+      console.log(input_text.value);
+      if (decode) {
+        input_number.value = input_number.value * -1;
+      };
+      final.innerHTML = caesarCipher(input_text.value, input_number.value);
+      console.log(caesarCipher(input_text.value, input_number.value))
     };
+  }
+  
+function hint_is_here() {
+  const pop_up = document.getElementById('pop_up');
+  pop_up.classList.remove('hidden');
+
+
 }
